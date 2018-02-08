@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Basic JavaScript examples</title>
+<link rel="stylesheet" href="assets/css/style.css" media="screen">
+<link rel="shortcut icon" href="http://www.coursemixer.com/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>getting started with JavaScript</h1>
+    </header>
+
+    <main>
+        <div class="banner"></div>
+        <div id="foo" class="box">
+            <div class="container">
+                <h2 class="simple">Simple functions tests:</h2>
+                <div class="centred">
+                    <button class="btn" id="fooBtn" type="button">click me</button>
+                </div>
+
+            </div>
+        </div><!--/foo-->
+
+        <div id="dateSample" class="box">
+            <div class="container">
+                <h2 class="time">Displaying Date and Time: (hey, a clock!)</h2>
+                <p>
+                    <span class="labelSpan">Date:</span> <span class="digital" id="currentDate"></span>
+                </p>
+                <p>
+                    <span class="labelSpan">Time:</span> <span class="digital" id="currentHours"></span> :
+                    <span class="digital" id="currentMinutes"></span> :
+                    <span class="digital" id="currentSeconds"></span>
+                </p>
+            </div>
+        </div><!--/dateSample-->
+
+        <div id="picChange" class="box">
+            <div class="container">
+                <h2 class="picture">Changing a picture</h2>
+                <div  class="centred">
+                    <img id="smiley" src="assets/imgs/Smiley_SAD.png" width="187" height="187" alt="smiley" />
+                </div>
+                <div class="centred">
+                    <input class="btn" id="smileyBtn" type="button" value="make me happy!"  /><!--changePic-->
+                </div>
+            </div>
+        </div><!--/picChange-->
+
+        <div class="box">
+            <div class="container">
+                <h2 class="text">Changing text size and color</h2>
+
+                <p id="resDiv">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut abore et dolore magna aliqua. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut abore et dolore magna aliqua. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                <div class="cssBtns">
+                    <button class="btn mRight" id="reduceBtn" >small font</button><!--reduceFont()-->
+                    <button class="btn mRight" id="normaliseBtn" >normal font</button><!--normaliseFont()-->
+                    <button class="btn" id="enlargeBtn" >big font</button><!--enlargeFont()-->
+                    <button class="btn mRight mLeft" id="redBtn" >red text</button><!--makeTextRed()-->
+                    <button class="btn" id="blackBtn" >black text</button><!--makeTextBlack()-->
+                </div>
+            </div>
+        </div><!--/resDiv-->
+
+        <div id="animDiv" class="box">
+            <div class="container">
+                <h2 class="animation">A simple animation</h2>
+                <div>
+                    <img id="animPic" src="assets/imgs/Car_right.png" width="121" height="40" />
+                </div>
+                <div class="clearFix">
+                    <button  id="moveLeftBtn" class="btn animBtns leftBtn">move to left</button><!--moveLeft()  disabled-->
+                    <button id="moveRightBtn" class="btn animBtns rightBtn">move to right</button><!--moveRight()-->
+                </div>
+            </div>
+        </div><!--/animDiv-->
+
+
+        <div id="gallery" class="box">
+            <div class="container">
+                <h2 class="gallery">A simple gallery</h2>
+                <img id="gPic" src="assets/imgs/IMG_01.png" width="525" height="214" alt="gallery pic" />
+                <div class="clearFix">
+                    <button  class="btn leftBtn" id="prevBtn">prev</button><!--moveGallery('prev')-->
+                    <button  class="btn rightBtn" id="nextBtn">next</button><!--moveGallery('next')-->
+                </div>
+            </div>
+        </div><!--/gallery-->
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <h4>&copy;Training Dragon 2018</h4>
+        </div>
+    </footer>
+
+	
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
